@@ -1,5 +1,7 @@
-#Project Title
+# Linked Lists
+
 The [Odin](http://theodinproject.com) Project's [Linked Lists](http://www.theodinproject.com/courses/ruby-programming/lessons/linked-lists)
+
 Your Task
 
 You will need two classes:
@@ -21,16 +23,10 @@ Build the following methods in your linked list class:
 `#to_s` represent your LinkedList objects as strings, so you can print them out and preview them in the console. The format should be: 
 `( data ) -> ( data ) -> ( data ) -> nil`
 
-##Use
-
-##Development Languages
+## Development Languages
 * Ruby v2.4
 
-##TODO
-1. 
-2. 
-
-##Contributing
+## Contributing
 Please follow a "fork-and-pull" workflow when Contributing
 
 1. Fork the repo on GitHub
@@ -39,7 +35,7 @@ Please follow a "fork-and-pull" workflow when Contributing
 4. Push your work back up to your fork
 5. Submit a Pull request so that we can review your changes
 
-##Copyright Notice
+## Copyright Notice
 Copyright 2017 Andy Duss
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

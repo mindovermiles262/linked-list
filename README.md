@@ -20,8 +20,7 @@ Build the following methods in your linked list class:
 `#pop` removes the last element from the list
 `#contains?` returns true if the passed in value is in the list and otherwise returns false.
 `#find(data)` returns the index of the node containing data, or nil if not found.
-`#to_s` represent your LinkedList objects as strings, so you can print them out and preview them in the console. The format should be: 
-`( data ) -> ( data ) -> ( data ) -> nil`
+`#to_s` represent your LinkedList objects as strings, so you can print them out and preview them in the console. The format should be: `( data ) -> ( data ) -> ( data ) -> nil`
 
 ## Development Languages
 * Ruby v2.4

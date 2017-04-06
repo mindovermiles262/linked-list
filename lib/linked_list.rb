@@ -5,6 +5,7 @@ class LinkedList
 
 	def initialize
 		@head = Node.new("head", nil)
+		@tail = @head
 	end
 
 
@@ -46,7 +47,7 @@ class LinkedList
 		if @head.next_node != nil
 			node = @head.next_node
 			while node.next_node != nil
-				node = @head.next_node
+				node = node.next_node
 			end
 			node
 		else

@@ -67,20 +67,11 @@ describe "LinkedList" do
 			expect(@list.size).to eql(1)
 		end
 
-		it 'returns 2' do
+		it 'returns three nodes' do
 			@list.append(3)
 			@list.append(4)
-			expect(@list.size).to eql(2) 
-		end
-
-		it 'returns 3' do
-			puts "adding first"
-			@list.append(3)
-			puts "adding second"
-			@list.append(4)
-			puts "adding third"
 			@list.append(6)
-			expect(@list.size).to_not eql(3) 
+			expect(@list.size).to eql(3) 
 		end
 
 	end

@@ -43,5 +43,47 @@ describe "LinkedList" do
 		
 	end
 	
+	describe "#prepend" do
+		before do
+			@list.prepend(2)
+		end
+		
+		it "adds to the beginning of the list" do
+			expect(@list.head.next_node.value).to eql(2)
+		end
+		it "adds additional nodes to beginning of list" do
+			@list.prepend(1)
+			expect(@list.head.next_node.value).to eql(1)
+		end
+	end
+
+	describe "#size" do
+		it "returns 0 if empty" do
+			expect(@list.size).to eql(0)
+		end
+		
+		it "returns one node" do
+			@list.append(1)
+			expect(@list.size).to eql(1)
+		end
+
+		it 'returns 2' do
+			@list.append(3)
+			@list.append(4)
+			expect(@list.size).to eql(2) 
+		end
+
+		it 'returns 3' do
+			puts "adding first"
+			@list.append(3)
+			puts "adding second"
+			@list.append(4)
+			puts "adding third"
+			@list.append(6)
+			expect(@list.size).to_not eql(3) 
+		end
+
+	end
+	
 
 end

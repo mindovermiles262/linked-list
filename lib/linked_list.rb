@@ -1,4 +1,4 @@
-require "node"
+require_relative "./node"
 
 class LinkedList
 	attr_accessor :size, :head, :tail
@@ -40,7 +40,6 @@ class LinkedList
 	def head
 		@head
 	end
-
 
 	# Returns the last node of the list
 	def tail

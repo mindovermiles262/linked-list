@@ -5,7 +5,7 @@ class LinkedList
 
 	def initialize
 		@head = Node.new("head", nil)
-		@tail = @head
+		#@tail = @head
 	end
 
 
@@ -58,24 +58,23 @@ class LinkedList
 
 	# Returns the node at the given index
 	def at(index)
-		location = @head
-		index.times do
+		location = @head.next_node
+		(index).times do
 			location = location.next_node
 		end
-		location.value
+		location
 	end	
 
 
 	# Removes the last element from the list
 	def pop
-		location = @head
-		(size - 1).times do
+		location = @head.next_node
+		self.size-2.times do
 			location = location.next_node
 		end
-		last = location.next_node
+		last = location.dup
 		location.next_node = nil
-		@tail = location
-		return last.value
+		return last
 	end
 
 

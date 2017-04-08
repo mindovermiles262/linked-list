@@ -69,13 +69,60 @@ class LinkedList
 	# Removes the last element from the list
 	def pop
 		location = @head.next_node
-		self.size-2.times do
+		while location.next_node.next_node != nil
 			location = location.next_node
 		end
-		last = location.dup
+		last = location.next_node
 		location.next_node = nil
 		return last
+		location = @head
 	end
 
+	def contains?(search)
+		if @head.value == search
+			return true
+		elsif @head.next_node != nil
+			location = @head.next_node
+			while location.next_node != nil
+				if location.value == search
+					return true
+				else
+					location = location.next_node
+				end
+			end
+			return false
+		end
+	end
+	
+	def find(search)
+		if @head.next_node != nil
+			i = 0
+			location = @head.next_node
+			while location.next_node != nil
+				if location.value == search
+					return i
+				else
+					location = location.next_node
+					i += 1
+				end
+			end
+		else
+			return nil
+		end	
+	end
 
+	def to_s
+		str = ""
+		if @head.next_node != nil
+			location = @head.next_node
+			while location.next_node != nil
+				str += "( #{location.value} ) -> "
+				location = location.next_node
+			end
+			str += "( #{location.value} ) -> nil"
+		else
+			str = "nil"
+		end
+	end
+	
 end
